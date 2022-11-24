@@ -31,6 +31,7 @@
         let pokemon3 = "charmander.png";
         let pokemon4 = "squirtle.png";
         let fragment1 ="";
+        pokemons =["pikachu.png","bulbasaur.png","charmander.png","squirtle.png"];
         for(i=0;i<4;i++)
         {
             fragment1 = fragment1 + "<img class='pokemon' src ='" + pokemon1 + "' />"
@@ -69,23 +70,11 @@
 
         for(i=0;i<16;i++)
         {
-            A = Math.floor(Math.random() * 4) + 1
-            if (A==1)
-            {
-                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon1 + "' />"
-            }
-            else if (A==2)
-            {
-                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon2 + "' />"
-            }
-            else if (A==3)
-            {
-                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon3 + "' />"
-            }
-            else
-            {
-                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon4 + "' />"
-            }
+            A = Math.floor(Math.random() * 4) 
+           
+            
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemons[A] + "' />"
+            
             if(i%4==3)fragment3 = fragment3 + "<br>";
         }
         
